@@ -9,13 +9,33 @@ import UIKit
 import MobileCoreServices
 import AVFoundation
 import Photos
-
+import SwiftUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        copyVideoFromURL()
+        addTabView()
+        //copyVideoFromURL()
+    }
+
+    private func addTabView() {
+        // Create a UIHostingController with your SwiftUI view
+               let swiftUIView = MyTabView()
+               let hostingController = UIHostingController(rootView: swiftUIView)
+
+               // Add the hosting controller's view as a subview
+               addChild(hostingController)
+               view.addSubview(hostingController.view)
+               hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+               NSLayoutConstraint.activate([
+                   hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                   hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                   hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+                   hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+               ])
+               hostingController.didMove(toParent: self)
+           
     }
 
     private func copyVideoFromURL(){
@@ -25,14 +45,14 @@ class ViewController: UIViewController {
        // let string1 = "https://file-examples.com/wp-content/uploads/2018/04/file_example_MOV_1920_2_2MB.mov"
         guard let url = URL(string: string1) else { return }
      //   cropVideo(sourceURL1: url, statTime: 1.00, endTime: 5.00)
-        let startTime = CMTime(seconds: Double(3.0 ), preferredTimescale: 1000)
+        let startTime = CMTime(seconds: Double(3.0), preferredTimescale: 1000)
         let endTime = CMTime(seconds: Double(5.0), preferredTimescale: 1000)
        // let outputUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("output.mp4")
 //        cropVideo1(sourceURL: url, startTime: startTime, endTime: endTime, outputURL: outputUrl, completion: {success in
 //            debugPrint(success)
 //        })
        // let sourceURL = URL(fileURLWithPath: "path/to/source/video.mp4")
-        cropVideo3(sourceURL: url, startTime: 2.0, endTime: 500.0) { [weak self] (outputURL, error) in
+        cropVideo3(sourceURL: url, startTime: 5.0, endTime: 20.0) { [weak self] (outputURL, error) in
             if let error = error {
                 print("Error cropping video: \(error)")
                 return

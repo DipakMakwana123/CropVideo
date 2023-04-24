@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A051F0629F55ACF00A4824A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A051F0529F55ACF00A4824A /* VideoPlayerView.swift */; };
+		7A186A8F29F53DD600BC4EC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A186A8E29F53DD600BC4EC8 /* HomeView.swift */; };
+		7A186A9129F53DE200BC4EC8 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A186A9029F53DE200BC4EC8 /* MyTabView.swift */; };
+		7A186A9329F53DF000BC4EC8 /* MyClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A186A9229F53DF000BC4EC8 /* MyClipView.swift */; };
 		7A2011CA29F5114C00B2FB94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011C929F5114C00B2FB94 /* AppDelegate.swift */; };
 		7A2011CC29F5114C00B2FB94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011CB29F5114C00B2FB94 /* SceneDelegate.swift */; };
 		7A2011CE29F5114C00B2FB94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011CD29F5114C00B2FB94 /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 		7A2011E129F5114F00B2FB94 /* CropVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011E029F5114F00B2FB94 /* CropVideoTests.swift */; };
 		7A2011EB29F5114F00B2FB94 /* CropVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011EA29F5114F00B2FB94 /* CropVideoUITests.swift */; };
 		7A2011ED29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */; };
+		7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */; };
+		7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E529F6611600E55DA2 /* CopyVideo.swift */; };
+		7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A051F0529F55ACF00A4824A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		7A186A8E29F53DD600BC4EC8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7A186A9029F53DE200BC4EC8 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		7A186A9229F53DF000BC4EC8 /* MyClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClipView.swift; sourceTree = "<group>"; };
 		7A2011C629F5114C00B2FB94 /* CropVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2011C929F5114C00B2FB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2011CB29F5114C00B2FB94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		7A2011E629F5114F00B2FB94 /* CropVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2011EA29F5114F00B2FB94 /* CropVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropVideoUITests.swift; sourceTree = "<group>"; };
 		7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropVideoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		7A79E7E529F6611600E55DA2 /* CopyVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyVideo.swift; sourceTree = "<group>"; };
+		7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 		7A2011BD29F5114C00B2FB94 = {
 			isa = PBXGroup;
 			children = (
+				7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */,
 				7A2011C829F5114C00B2FB94 /* CropVideo */,
 				7A2011DF29F5114F00B2FB94 /* CropVideoTests */,
 				7A2011E929F5114F00B2FB94 /* CropVideoUITests */,
@@ -106,6 +121,12 @@
 				7A2011D229F5114F00B2FB94 /* Assets.xcassets */,
 				7A2011D429F5114F00B2FB94 /* LaunchScreen.storyboard */,
 				7A2011D729F5114F00B2FB94 /* Info.plist */,
+				7A186A8E29F53DD600BC4EC8 /* HomeView.swift */,
+				7A186A9029F53DE200BC4EC8 /* MyTabView.swift */,
+				7A186A9229F53DF000BC4EC8 /* MyClipView.swift */,
+				7A051F0529F55ACF00A4824A /* VideoPlayerView.swift */,
+				7A79E7E529F6611600E55DA2 /* CopyVideo.swift */,
+				7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */,
 			);
 			path = CropVideo;
 			sourceTree = "<group>";
@@ -258,9 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */,
+				7A186A9329F53DF000BC4EC8 /* MyClipView.swift in Sources */,
+				7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */,
+				7A186A9129F53DE200BC4EC8 /* MyTabView.swift in Sources */,
 				7A2011CE29F5114C00B2FB94 /* ViewController.swift in Sources */,
+				7A186A8F29F53DD600BC4EC8 /* HomeView.swift in Sources */,
 				7A2011CA29F5114C00B2FB94 /* AppDelegate.swift in Sources */,
 				7A2011CC29F5114C00B2FB94 /* SceneDelegate.swift in Sources */,
+				7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */,
+				7A051F0629F55ACF00A4824A /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +475,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +506,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

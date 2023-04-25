@@ -23,6 +23,10 @@
 		7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */; };
 		7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E529F6611600E55DA2 /* CopyVideo.swift */; };
 		7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */; };
+		7A79E7EA29F69B8900E55DA2 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E929F69B8900E55DA2 /* LoaderView.swift */; };
+		7A79E7F229F6A2EF00E55DA2 /* View+SizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7EF29F6A2EF00E55DA2 /* View+SizeExtension.swift */; };
+		7A79E7F329F6A2EF00E55DA2 /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7F029F6A2EF00E55DA2 /* RotationEffect.swift */; };
+		7A79E7F429F6A2EF00E55DA2 /* LogoAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7F129F6A2EF00E55DA2 /* LogoAnimationModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		7A79E7E529F6611600E55DA2 /* CopyVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyVideo.swift; sourceTree = "<group>"; };
 		7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		7A79E7E929F69B8900E55DA2 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		7A79E7EF29F6A2EF00E55DA2 /* View+SizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SizeExtension.swift"; sourceTree = "<group>"; };
+		7A79E7F029F6A2EF00E55DA2 /* RotationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
+		7A79E7F129F6A2EF00E55DA2 /* LogoAnimationModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoAnimationModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		7A2011C829F5114C00B2FB94 /* CropVideo */ = {
 			isa = PBXGroup;
 			children = (
+				7A79E7EE29F6A2CC00E55DA2 /* Animation */,
 				7A2011C929F5114C00B2FB94 /* AppDelegate.swift */,
 				7A2011CB29F5114C00B2FB94 /* SceneDelegate.swift */,
 				7A2011CD29F5114C00B2FB94 /* ViewController.swift */,
@@ -127,6 +136,7 @@
 				7A051F0529F55ACF00A4824A /* VideoPlayerView.swift */,
 				7A79E7E529F6611600E55DA2 /* CopyVideo.swift */,
 				7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */,
+				7A79E7E929F69B8900E55DA2 /* LoaderView.swift */,
 			);
 			path = CropVideo;
 			sourceTree = "<group>";
@@ -146,6 +156,16 @@
 				7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */,
 			);
 			path = CropVideoUITests;
+			sourceTree = "<group>";
+		};
+		7A79E7EE29F6A2CC00E55DA2 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7A79E7F129F6A2EF00E55DA2 /* LogoAnimationModifier.swift */,
+				7A79E7F029F6A2EF00E55DA2 /* RotationEffect.swift */,
+				7A79E7EF29F6A2EF00E55DA2 /* View+SizeExtension.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,13 +300,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */,
+				7A79E7F329F6A2EF00E55DA2 /* RotationEffect.swift in Sources */,
+				7A79E7EA29F69B8900E55DA2 /* LoaderView.swift in Sources */,
 				7A186A9329F53DF000BC4EC8 /* MyClipView.swift in Sources */,
 				7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */,
 				7A186A9129F53DE200BC4EC8 /* MyTabView.swift in Sources */,
+				7A79E7F429F6A2EF00E55DA2 /* LogoAnimationModifier.swift in Sources */,
 				7A2011CE29F5114C00B2FB94 /* ViewController.swift in Sources */,
 				7A186A8F29F53DD600BC4EC8 /* HomeView.swift in Sources */,
 				7A2011CA29F5114C00B2FB94 /* AppDelegate.swift in Sources */,
 				7A2011CC29F5114C00B2FB94 /* SceneDelegate.swift in Sources */,
+				7A79E7F229F6A2EF00E55DA2 /* View+SizeExtension.swift in Sources */,
 				7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */,
 				7A051F0629F55ACF00A4824A /* VideoPlayerView.swift in Sources */,
 			);

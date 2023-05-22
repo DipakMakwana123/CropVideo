@@ -22,7 +22,7 @@
 		7A2011ED29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */; };
 		7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */; };
 		7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E529F6611600E55DA2 /* CopyVideo.swift */; };
-		7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */; };
+		7A79E7E829F6631200E55DA2 /* CopyVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E729F6631200E55DA2 /* CopyVideoViewModel.swift */; };
 		7A79E7EA29F69B8900E55DA2 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E929F69B8900E55DA2 /* LoaderView.swift */; };
 		7A79E7F229F6A2EF00E55DA2 /* View+SizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7EF29F6A2EF00E55DA2 /* View+SizeExtension.swift */; };
 		7A79E7F329F6A2EF00E55DA2 /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7F029F6A2EF00E55DA2 /* RotationEffect.swift */; };
@@ -66,7 +66,7 @@
 		7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropVideoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		7A79E7E529F6611600E55DA2 /* CopyVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyVideo.swift; sourceTree = "<group>"; };
-		7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		7A79E7E729F6631200E55DA2 /* CopyVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyVideoViewModel.swift; sourceTree = "<group>"; };
 		7A79E7E929F69B8900E55DA2 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		7A79E7EF29F6A2EF00E55DA2 /* View+SizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SizeExtension.swift"; sourceTree = "<group>"; };
 		7A79E7F029F6A2EF00E55DA2 /* RotationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				7A186A9229F53DF000BC4EC8 /* MyClipView.swift */,
 				7A051F0529F55ACF00A4824A /* VideoPlayerView.swift */,
 				7A79E7E529F6611600E55DA2 /* CopyVideo.swift */,
-				7A79E7E729F6631200E55DA2 /* VideoViewModel.swift */,
+				7A79E7E729F6631200E55DA2 /* CopyVideoViewModel.swift */,
 				7A79E7E929F69B8900E55DA2 /* LoaderView.swift */,
 			);
 			path = CropVideo;
@@ -311,7 +311,7 @@
 				7A2011CA29F5114C00B2FB94 /* AppDelegate.swift in Sources */,
 				7A2011CC29F5114C00B2FB94 /* SceneDelegate.swift in Sources */,
 				7A79E7F229F6A2EF00E55DA2 /* View+SizeExtension.swift in Sources */,
-				7A79E7E829F6631200E55DA2 /* VideoViewModel.swift in Sources */,
+				7A79E7E829F6631200E55DA2 /* CopyVideoViewModel.swift in Sources */,
 				7A051F0629F55ACF00A4824A /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

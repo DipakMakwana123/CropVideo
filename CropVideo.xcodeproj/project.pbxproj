@@ -20,6 +20,7 @@
 		7A2011E129F5114F00B2FB94 /* CropVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011E029F5114F00B2FB94 /* CropVideoTests.swift */; };
 		7A2011EB29F5114F00B2FB94 /* CropVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011EA29F5114F00B2FB94 /* CropVideoUITests.swift */; };
 		7A2011ED29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2011EC29F5114F00B2FB94 /* CropVideoUITestsLaunchTests.swift */; };
+		7A6B28122A1BD46600374157 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6B28112A1BD46600374157 /* SimpleToast */; };
 		7A79E7E429F647FF00E55DA2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E329F647FF00E55DA2 /* PlayerViewController.swift */; };
 		7A79E7E629F6611600E55DA2 /* CopyVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E529F6611600E55DA2 /* CopyVideo.swift */; };
 		7A79E7E829F6631200E55DA2 /* CopyVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79E7E729F6631200E55DA2 /* CopyVideoViewModel.swift */; };
@@ -78,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6B28122A1BD46600374157 /* SimpleToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = CropVideo;
+			packageProductDependencies = (
+				7A6B28112A1BD46600374157 /* SimpleToast */,
+			);
 			productName = CropVideo;
 			productReference = 7A2011C629F5114C00B2FB94 /* CropVideo.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 7A2011BD29F5114C00B2FB94;
+			packageReferences = (
+				7A6B28102A1BD46600374157 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = 7A2011C729F5114C00B2FB94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -492,6 +500,7 @@
 				DEVELOPMENT_TEAM = 4WB6UCZQF4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CropVideo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To store crop video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -523,6 +532,7 @@
 				DEVELOPMENT_TEAM = 4WB6UCZQF4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CropVideo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To store crop video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -660,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A6B28102A1BD46600374157 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A6B28112A1BD46600374157 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6B28102A1BD46600374157 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A2011BE29F5114C00B2FB94 /* Project object */;
 }

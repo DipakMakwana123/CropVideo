@@ -31,24 +31,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    func registerBackgroundTasks() {
-        // Declared at the "Permitted background task scheduler identifiers" in info.plist
-        let backgroundAppRefreshTaskSchedulerIdentifier = backgroundTask
-      //  let backgroundProcessingTaskSchedulerIdentifier = "com.example.fooBackgroundProcessingIdentifier"
-
-        // Use the identifier which represents your needs
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: backgroundAppRefreshTaskSchedulerIdentifier, using: nil) { (task) in
-           print("BackgroundAppRefreshTaskScheduler is executed NOW!")
-           print("Background time remaining: \(UIApplication.shared.backgroundTimeRemaining)s")
-           task.expirationHandler = {
-             task.setTaskCompleted(success: false)
-           }
-
-           // Do some data fetching and call setTaskCompleted(success:) asap!
-           let isFetchingSuccess = true
-           task.setTaskCompleted(success: isFetchingSuccess)
-         }
-       } 
-
 }
 
